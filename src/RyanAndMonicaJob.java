@@ -2,7 +2,7 @@ public class RyanAndMonicaJob implements Runnable {
 	
 	private BankAccount account = new BankAccount();
 	
-	private static void main (String[] args) {
+	public static void main(String[] args) {
 		RyanAndMonicaJob theJob = new RyanAndMonicaJob();
 		Thread one = new Thread (theJob);
 		Thread two = new Thread (theJob);
@@ -21,7 +21,7 @@ public class RyanAndMonicaJob implements Runnable {
 		}
 	}
 	
-	private void makeWithdraw1(int amount) {
+	private synchronized void makeWithdraw1(int amount) {
 		if (account.getBalance() >= amount) {
 			System.out.println(Thread.currentThread().getName() + " is about to withdraw");
 			try {

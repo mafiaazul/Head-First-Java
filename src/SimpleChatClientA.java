@@ -1,10 +1,8 @@
 import java.io.*;
 import java.net.*;
+import java.util.*;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
-
-import java.awt.BorderLayout;
 import java.awt.event.*;
 
 public class SimpleChatClientA {
