@@ -1,6 +1,3 @@
-package AppendixA;
-// chapter 14
-
 import java.awt.*;
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
